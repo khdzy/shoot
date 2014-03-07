@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>shoot!</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+
+	<body>
+
+		
+	
+		<ul class="stats">
+			<li>score: <span id="score">0</span> </li>
+			<li>to find: <span id="toFind">1</span> </li>
+			<li>time left: <span id="timeLeft" class="time">60</span> </li>
+		</ul>
+		<div id="game-wrapper">
+			<table id="letterTable" class="letters" style="font-size: 100%;">
+				<tbody>
+					<tr>
+						<td><h1>T</h1></td>
+						<td><h1 class="correct">k</h1></td>
+					</tr>
+					<tr>
+						<td><h1>r</h1></td>
+						<td><h1 class="wrong">M</h1></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<div id="game-over">
+			<!-- This div is empty and it will have a background image -->
+			<div class="timeout"></div>
+			<div class="youscored">you scored: <span class="end" id="scored">0</div>
+			<div class="button" id="button">Play again</div>
+		</div>
+
+		<div id="welcome">
+			<div class="shoot"></div>
+			<div class="buttonPlay" id="buttonPlay">Play</div>
+		</div>
+
+		<div class="errors">errors allowed: <span id="errorsAllowed">5</span> </div>
+
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+
+</html>

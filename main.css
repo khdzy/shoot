@@ -1,0 +1,244 @@
+body {
+	background: #131939;
+	-webkit-user-select: none;
+}
+
+@font-face {
+	font-family: Bodini;
+	src: url('fonts/BodonMTBla');
+}
+
+@font-face {
+	font-family: Courier;
+	src: url('fonts/Courier.dfont');
+}
+
+@font-face {
+	font-family: Dude;
+	src: url('fonts/Dude_Dolly.otf');
+}
+
+@font-face {
+	font-family: Gothic;
+	src: url('fonts/LeagueGothic-Regular.otf');
+}
+
+@font-face {
+	font-family: Museo;
+	src: url('fonts/Museo500-Regular.otf');
+}
+
+@font-face {
+	font-family: Sansita;
+	src: url('fonts/SansitaOne.ttf');
+}
+
+@font-face {
+	font-family: Futura;
+	src: url('fonts/Futura.ttc');
+}
+
+@font-face {
+	font-family: SignPaint;
+	src: url('fonts/SignPaiHouBru');
+}
+
+.timeout {
+	background: url(bkg3.png); /*The background image*/
+	background-repeat: no-repeat; /*Don't create a pattern out of the image*/
+	background-position: center; /*Center the image on the element*/
+	width: 500px; /*Give it a specific width*/
+	height: 500px; /*Give it a specific height*/
+	position: absolute; /*Position the element relatively to the window or parent element with absolute*/ 
+	left: 50%; margin-left: -250px; /*Move the element half of the screen to the right, but also half of its width to the left*/
+	top: 130px; /*Have it 130px from the top of the window*/
+	z-index: 1; /*Place it above other common elements*/
+}
+
+.shoot {
+	background: url(shoot.png); /*The background image*/
+	background-repeat: no-repeat; /*Don't create a pattern out of the image*/
+	background-position: center; /*Center the image on the element*/
+	width: 500px; /*Give it a specific width*/
+	height: 500px; /*Give it a specific height*/
+	position: absolute; /*Position the element relatively to the window or parent element with absolute*/ 
+	left: 50%; margin-left: -250px; /*Move the element half of the screen to the right, but also half of its width to the left*/
+	top: 130px; /*Have it 130px from the top of the window*/
+	z-index: 1; /*Place it above other common elements*/
+}
+
+.button {
+	height: 75px;
+	width: 270px;
+	background-color: #5371ff;
+	background-position: bottom;
+	font-family: Futura-light, sans-serif;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	line-height: 75px;
+	margin: 100px auto 6px;
+	box-shadow: 0px 6px 0px #314193;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+	
+}
+
+.button:active {
+	color: white;
+	box-shadow: none;
+	
+}
+
+.buttonPlay {
+	height: 75px;
+	width: 270px;
+	background-color: #5371ff;
+	background-position: bottom;
+	font-family: Futura-light, sans-serif;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	line-height: 75px;
+	margin: 100px auto 6px;
+	box-shadow: 0px 6px 0px #314193;
+	cursor: pointer;
+	z-index: 2;
+	margin-top: 630px;
+}
+
+.buttonPlay:active {
+	color: white;
+	box-shadow: none;
+	margin: 106px auto 0;
+	margin-top: 636px
+}
+
+.youscored {
+	font-family: Futura, sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	margin-top: -120px;
+}
+
+.end {
+	font-family: Futura, sans-serif;
+	font-size: 20px;
+	color: #ffa73f;
+}
+
+h1 {
+	margin: 0;
+	font-weight: normal;
+}
+
+.stats {
+	display: table;  /* Display the stats as if it was a table */
+	width: 100%;
+	padding: 0;
+}
+
+li, .errors {
+	font-family: Futura, sans-serif;
+	font-size:15px;
+	color: #2B3A85;	
+	display: table-cell; /* Display this list item as if it was a table cell */
+	width: 33%;
+}
+
+/* Select the first list item element of the parent */
+li:nth-child(1) {
+	text-align: left;
+}
+
+/* Select the second list item element of the parent */
+li:nth-child(2) {
+	text-align: center;
+}
+
+/* Select the third list item element of the parent */
+li:nth-child(3) {
+	text-align: right;
+}
+
+td {
+	position: relative;
+}
+
+td > h1.correct:after {
+	content: "";
+	background: url(right.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+td > h1.wrong:after {
+	content: "";
+	background: url(wrong.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+table.level3 h1 {
+	font-size: 70%;
+}
+
+span{
+	font-family: Futura-light, sans-serif;
+	font-size:15px;
+	color: white;
+}
+
+.time{
+	color: #ffa73f
+}
+
+.letters {
+	margin: 0 auto; /* Add margin "auto" to left and right to align an element horizonally to the center */
+}
+
+.errors {
+	float: right;
+	text-align: right;
+	margin-top: 40px;
+}
+
+td{
+	width:300px;
+	height: 350px;
+	text-align: center;
+	font-family: Futura, sans-serif;
+	font-size: 400%;
+	color: white;
+}
+
+#welcome {
+	display: block;
+}
+
+#game-over {
+	display: none;
+}
+
+#game-wrapper {
+	text-align: center;
+}
+
+#letterTable {
+	display: none;
+}
+

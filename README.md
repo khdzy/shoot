@@ -3,7 +3,7 @@ shoot
 
 Practice to build a game
 
-And practice how to had stuff to Github
+And practice how to add stuff to Github
 
 
 
